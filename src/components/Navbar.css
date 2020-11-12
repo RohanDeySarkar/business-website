@@ -1,0 +1,23 @@
+.navbar > .MuiSvgIcon-root {
+    font-size: 25px;
+}
+
+.navbar__moreIcon {
+    color: #bdbdbd;
+    cursor: pointer;
+}
+
+.navbar__moreIcon:hover {
+    color: #ffffff;
+}
+
+a {
+    color: #bdbdbd;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    color: white;
+    text-decoration: inherit;
+}

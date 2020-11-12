@@ -1,0 +1,129 @@
+.home__body {
+    background-color: rgb(235, 235, 235);
+    height: 100vh;
+    width: 100vw;
+    overflow-y: overlay;
+    display: flex;
+    flex-direction: column;
+}
+
+.home__bodyCarousel {
+    padding: 10px;
+}
+
+.carousel {
+    max-height: 600px;
+    width: 100vw;
+    background-color:  rgb(214, 214, 214);
+}
+
+.carousel__item {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+.carousel__image {
+    max-height: 300px;
+    max-width: 100vw;
+    object-fit: contain;
+}
+
+.carousel__item > p {
+    padding: 20px 10px;
+    color: rgb(54, 51, 51); 
+    font-weight: 400;
+    text-transform: capitalize;
+    font-style: oblique;
+}
+
+.home__body > hr {
+    border: 1px solid #282828;
+    width: 100vw;
+}
+
+.home__bodyCards {
+   padding: 10px;
+}
+
+.home__bodyCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-height: 700px;
+    width: 100vw;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.home__bodyCardTitle {
+    max-width: 700px;
+    flex: 0.8;
+    color: rgb(99, 99, 99);
+}
+
+.home__bodyCardTitle > p {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.home__bodyCardImage {
+    flex: 0.2;
+    padding: 10px;
+}
+
+.home__bodyCardImage > img {
+    max-height: 400px;
+    max-width: 100vw;
+    object-fit: contain;
+}
+
+.home__bodyCard--text {
+    padding: 10px 20px;
+    width: 100vw;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.home__bodyCard--textField {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.home__bodyCard--textLeft {
+    flex: 0.6;
+}
+
+.home__bodyCard--textRight {
+    flex: 0.4;
+}
+
+.home__bodyCardIcon {
+    margin-bottom: 5px;
+    color: rgb(108, 108, 108);
+}
+
+.home__bodyCardIcon:hover {
+    color: black;
+}
+
+
+
+@media (max-width: 800px) {
+    .home__bodyCard {
+        flex-direction: column;
+    }
+
+    .home__bodyCardTitle > p {
+        /* max-width: 400px; */
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .home__bodyCardImage > img {
+        max-height: 300px;
+        /* max-width: 400px; */
+        object-fit: contain;
+    }
+}

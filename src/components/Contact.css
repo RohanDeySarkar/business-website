@@ -1,0 +1,63 @@
+.contact__card {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    /* height: 100vh; */
+}
+
+.contact__cardDetail {
+    display: flex;
+    max-height: 500px;
+    max-width: 600px;
+    padding: 10px;
+    /* background-color: rgb(220, 220, 220); */
+}
+
+.contact__cardLeft {
+    flex: 0.3;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: rgb(220, 220, 220);
+}
+
+.contact__cardLeft > img {
+    object-fit: contain;
+    height: 180px;
+    width: 180px;
+}
+
+.contact__cardLeft > h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.contact__cardRight {
+    flex: 0.7;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: rgb(220, 220, 220);
+}
+
+.contact__cardRightIcons {
+    /* background-color: crimson; */
+    padding: 20px;
+    display: flex;
+}
+
+.contact__cardRightIcon {
+    margin-right: 80px;
+}
+
+.contact__cardRightActiveIcon {
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+.contact__cardRightActiveIcon:hover {
+    transform: scale(1.08);
+}
+
+@media (max-width: 600px) {
+    .contact__cardDetail {
+        flex-direction: column;
+    }
+}

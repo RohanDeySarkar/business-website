@@ -1,0 +1,32 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-evenly;
+    height: 100vh;
+    overflow-y: overlay;
+    background-color: rgb(235, 235, 235);
+}
+
+.footer {
+    bottom: 0;
+    position: fixed;
+    width: 100vw;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer > p {
+    padding: 3px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    color: #bdbdbd;
+}
+
+@media (max-width: 600px) {
+    .footer > p {
+        font-size: 7.9px;
+        padding: 6px 4px;
+    }
+}
