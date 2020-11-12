@@ -57,6 +57,10 @@
 }
 
 @media (max-width: 600px) {
+    .contact__card {
+        padding: 5px 0;
+    }
+
     .contact__cardDetail {
         flex-direction: column;
     }

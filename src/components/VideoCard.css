@@ -39,8 +39,10 @@
 @media (max-width: 600px) {
     .videocard {
         width: 400px;
-        height: 400px;
+        height: 300px;
+        padding: 5px 0;
     }
+    
     .videocard > img {
         width: 400px;
         height: 200px;

@@ -12,7 +12,7 @@
 }
 
 .carousel {
-    max-height: 600px;
+    height: 400px;
     width: 100vw;
     background-color:  rgb(214, 214, 214);
 }
@@ -100,7 +100,8 @@
 }
 
 .home__bodyCardIcon {
-    margin-bottom: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
     color: rgb(108, 108, 108);
 }
 
@@ -110,7 +111,7 @@
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .home__bodyCard {
         flex-direction: column;
     }
@@ -125,5 +126,9 @@
         max-height: 300px;
         /* max-width: 400px; */
         object-fit: contain;
+    }
+
+    .home__bodyCard--textField {
+        flex-direction: column;
     }
 }
