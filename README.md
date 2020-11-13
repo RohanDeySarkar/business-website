@@ -1,3 +1,6 @@
+Deployed here ---> https://hulu-clone-adf3d.web.app/#/
+
+![](https://github.com/RohanDeySarkar/business-website/blob/master/sampleImg.png?raw=true)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
