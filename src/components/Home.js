@@ -8,6 +8,30 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { Link } from 'react-router-dom';
 
 function Home() {
+
+    const carouselItems = [
+        {
+            image: require("./images/35.jpg"),
+            des: "display cabinets"
+        },
+        {
+            image: require("./images/36.jpg"),
+            des: "basin counter"
+        },
+        {
+            image: require("./images/3.jpg"),
+            des: "crockery unit"
+        },
+        {
+            image: require("./images/25.jpg"),
+            des: "panel art"
+        },
+        {
+            image: require("./images/33.jpg"),
+            des: "showroom counter"
+        }
+    ];
+
     return (
         <div className="home">
             <div className="header">
@@ -24,36 +48,22 @@ function Home() {
             <div className="home__body">
                 <div className="home__bodyCarousel">
                     <Carousel className="carousel">
-                        <Carousel.Item>
-                            <div className="carousel__item">
-                                <img className="carousel__image" src={require("./images/36.jpg")} alt=""/>
-                                <p>basin counter</p>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div className="carousel__item">
-                                <img className="carousel__image" src={require("./images/3.jpg")} alt=""/>
-                                <p>crockery unit</p>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div className="carousel__item">
-                                <img className="carousel__image" src={require("./images/25.jpg")} alt=""/>
-                                <p>panel art</p>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item >
-                            <div className="carousel__item">
-                                <img className="carousel__image" src={require("./images/33.jpg")} alt=""/>
-                                <p>showroom counter</p>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item >
-                            <div className="carousel__item">
-                                <img className="carousel__image" src={require("./images/35.jpg")} alt=""/>
-                                <p>display cabinets</p>
-                            </div>
-                        </Carousel.Item>
+                        {carouselItems.map((item) => (
+                            <Carousel.Item>
+                                <div className="carousel__background" 
+                                    style={{backgroundImage: `url(${item.image})`}}
+                                >
+                                    <div className="carousel__item">
+                                        <img 
+                                            className="carousel__image" 
+                                            src={item.image}
+                                            alt=""
+                                        />
+                                        <p>{item.des}</p>
+                                    </div>
+                                </div>
+                            </Carousel.Item>
+                        ))}
                     </Carousel>
                 </div>
 

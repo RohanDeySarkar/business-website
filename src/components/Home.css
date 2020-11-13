@@ -17,21 +17,29 @@
     background-color:  rgb(214, 214, 214);
 }
 
+.carousel__background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .carousel__item {
     display: grid;
     place-items: center;
     padding: 10px;
+    /* blurr background image */
+    background-color: rgba(214, 214, 214, 0.5)
 }
 
 .carousel__image {
-    max-height: 300px;
-    max-width: 100vw;
+    height: 300px;
+    width: 80vw;
     object-fit: contain;
 }
 
 .carousel__item > p {
     padding: 20px 10px;
-    color: rgb(54, 51, 51); 
+    color: rgb(37, 31, 31); 
     font-weight: 400;
     text-transform: capitalize;
     font-style: oblique;
